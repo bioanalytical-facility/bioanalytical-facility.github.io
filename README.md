@@ -12,11 +12,11 @@ A *drive* is a device that stores data from a computer; everything (including th
 
 Data within a drive is organized into a heiarchy of directories (folders, essentially). The *root directory* of a drive, sometimes just called the root, is the highest level directory. Relative to the root, all other directories within a drive are sub-directories.
 
-![Directory Heiarchy](/images/directory-graphic.png)
+![Directory Heiarchy](/images/directory-graphic.png "A heiarchy of directories")
 
 The term *relative* in the last sentence is of particular importance, and brings us to the concept of the *current directory*. The current directory refers to the directory that the current environment is operating in. 
 
-![Command Line: Current direcotry](images/current-directory.PNG)
+![Command Line: Current direcotry](images/current-directory.PNG "Default Command Line and Powershell windows")
 
 Let's examine the image above, which shows a PowerShell window stacked on top of a cmd window. Both of these are the default windows that open, and text displayed in both windows is very similar.  Can you tell what the current directory is? We will come back to this question soon. Because PowerShell is the active window, there is a blinking cursor displayed, which indicates that PowerShell is ready to accept input. Immediately prior to this cursor is ```>```. Input goes on the right side of ```>```, and the current directory is shown to the left. The answer to my previous question then, is that ```C:\Users\6600``` is the current directory. This is the default directory, also known as the **home directory**. So then why is PowerShell displaying ```PS C:\Users\6600>```, but cmd is displaying ```C:\Users\6600>```? PowerShell is newer and more powerful than cmd; the PS is there to let the user know that they are operating in a PowerShell environment. Later in the tutorial, we will use Python within the PowerShell. Once the environment is changed to Python, ```>``` becomes ```>>>``` and the current directory is not displayed. In the Linux environment, using Terminal (the Linux equivalent to PowerShell, albiet more powerful), ```>``` becomes ```<CURRENT DIRECTORY>:-$``` (Note: ```<``` and ```>``` are used for the demo purpose, as discussed earlier). Understanding this is important when learning how to navigate directories by CLI. 
 
@@ -84,7 +84,7 @@ Input:
 	PS C:\Users\6600> dir
 
 Output:
-![Viewing current directory conents](E:\2022\BAF\003_UntargetedTOF\Untargeted_tutorial\images\dir_using-PS_cur-dir.PNG)
+![Viewing current directory conents](images/dir_using-PS_cur-dir.PNG "Viewing current directory conents")
 
 Seeing the file is not in the current directory, , let's change the directory to the ```\Documents``` folder using the ```cd``` command, and then use ```dir``` to list the contents of ```\Documents``` (Note: The ```\``` delimiter before the directory name indicates that it is a sub-directory). Entering ```cd``` will invoke the command, but to do anything useful an argument must supplied as well, so that the computer knows what directory to navigate to. As we just saw, ```Documents``` is in the current directory, so we do not need to use the full path. Remember, the current directory is displayed immediately before ```>``` (which is telling us PowerShell is ready to accept input agian.
 
@@ -122,7 +122,7 @@ Output:
 	This worked because this text file was called using the full file name (Path + Name),
 	or because it was saved in the current directory.
 
-![Getting content of a file in the current directory](E:\2022\BAF\003_UntargetedTOF\Untargeted_tutorial\images\gc_using-PS_cur-dir.PNG)
+![Getting content of a file in the current directory](images/gc_using-PS_cur-dir.PNG "Getting content of a file in the current directory")
 
 As the file tells us, we didn't supply the file path with the file name, so this command must have worked because it was in the current directory. To test this, we are first going to use the "Copy-Item" command  the file to the ```C:\Users\6600``` (home) directory, then see if we can still view the file with the same command. Note: ```copy```, ```cp```, and ```cpi``` are all accepted syntax for the command, as shown in the table. What types of arguments do you think ```copy``` will require? If someone came up to you and said "copy", and nothing else, you might have some questions. "Copy what?" and "Copy it where?" would be perfectly reasonable things to ask. As it turns out, the computer also needs these questions answered before it is able to do what you ask, so we will supply this info in the form of arguments. 
 
