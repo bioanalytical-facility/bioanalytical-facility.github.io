@@ -1,4 +1,6 @@
-# Introduction
+# Untargeted Metabolomics at the BAF: A Tutorial
+
+### Introduction
 
 This Untargeted Metabolomics Pipeline tutorial is written from the first-person perspective of a Windows user with almost no programming experience, at least not at the start of developing this pipeline. An unrelated tip you may find useful is that using an external Solid State Drive (SSD) and SuperSpeed (SS) USB connections (SS USB ports are labeled with SS below them on the PC) will improve data transfer speeds. There will be lots of data transfered back and forth during processing, and  time can add up.
 
@@ -21,7 +23,7 @@ The term *relative* in the last sentence is of particular importance, and brings
 Let's examine the image above, which shows a PowerShell window stacked on top of a cmd window. Both of these are the default windows that open, and text displayed in both windows is very similar.  Can you tell what the current directory is? We will come back to this question soon. Because PowerShell is the active window, there is a blinking cursor displayed, which indicates that PowerShell is ready to accept input. Immediately prior to this cursor is ```>```. Input goes on the right side of ```>```, and the current directory is shown to the left. The answer to my previous question then, is that ```C:\Users\6600``` is the current directory. This is the default directory, also known as the **home directory**. So then why is PowerShell displaying ```PS C:\Users\6600>```, but cmd is displaying ```C:\Users\6600>```? PowerShell is newer and more powerful than cmd; the PS is there to let the user know that they are operating in a PowerShell environment. Later in the tutorial, we will use Python within the PowerShell. Once the environment is changed to Python, ```>``` becomes ```>>>``` and the current directory is not displayed. In the Linux environment, using Terminal (the Linux equivalent to PowerShell, albiet more powerful), ```>``` becomes ```<CURRENT DIRECTORY>:-$``` (Note: ```<``` and ```>``` are used for the demo purpose, as discussed earlier). Understanding this is important when learning how to navigate directories by CLI. 
 
 
-## Using cmd and PowerShell
+#### Using cmd and PowerShell
 
 When using the command lines, files located in directories that are higher than the current directory are not accessible **unless the full file path (including the drive letter) is given**. Similarly, files stored within sub-directories of the current directory are accessible by providing the file path **relative to the current directory**; the full path is not required. The table below lists some basic cmd and PowerShell commands, sometimes reffered to as **cmdlets**. Note that most commands/functions require an argument. The online [Microsoft Documentation](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands#command-line-reference-a-z) has a reference page for all of the Windows commands, which explains all the syntax, arguments, and other parameters each command uses. Most questions can be answered with a quick Google search, thankfully.
 
@@ -75,7 +77,7 @@ The output of ```Get-Help``` is more detailed. It contains:
 
 
 
-## Practice navigating directories by command line
+#### Practice navigating directories by command line
 
 Let's begin with some practice. There is a text file named ```directory-test.txt```, and I would like to view it's contents using PowerShell. The directory that it is saved to is ```C:\Users\6600\Documents```. Let's open PowerShell by pressing ```WinKey + r```, typing "PowerShell", and hitting ```Enter```. PowerShell will open to the home directory. Before doing anything, let's check to make sure ```directory-test.txt``` isn't in the current directory by using the ```dir``` command. We only want to list everything that is in the current directory, so we will not need to use any arguments with the command this time. For demo purposes, the contents of the current directory are also shown using the File Explorer. 
 
