@@ -12,11 +12,11 @@ A *drive* is a device that stores data from a computer; everything (including th
 
 Data within a drive is organized into a heiarchy of directories (folders, essentially). The *root directory* of a drive, sometimes just called the root, is the highest level directory. Relative to the root, all other directories within a drive are sub-directories.
 
-![Directory Heiarchy](E:\2022\BAF\003_UntargetedTOF\Untargeted_tutorial\images\directory-graphic.png)
+![Directory Heiarchy](/images/directory-graphic.png)
 
 The term *relative* in the last sentence is of particular importance, and brings us to the concept of the *current directory*. The current directory refers to the directory that the current environment is operating in. 
 
-![Command Line: Current direcotry](images\current-directory.PNG)
+![Command Line: Current direcotry](images/current-directory.PNG)
 
 Let's examine the image above, which shows a PowerShell window stacked on top of a cmd window. Both of these are the default windows that open, and text displayed in both windows is very similar.  Can you tell what the current directory is? We will come back to this question soon. Because PowerShell is the active window, there is a blinking cursor displayed, which indicates that PowerShell is ready to accept input. Immediately prior to this cursor is ```>```. Input goes on the right side of ```>```, and the current directory is shown to the left. The answer to my previous question then, is that ```C:\Users\6600``` is the current directory. This is the default directory, also known as the **home directory**. So then why is PowerShell displaying ```PS C:\Users\6600>```, but cmd is displaying ```C:\Users\6600>```? PowerShell is newer and more powerful than cmd; the PS is there to let the user know that they are operating in a PowerShell environment. Later in the tutorial, we will use Python within the PowerShell. Once the environment is changed to Python, ```>``` becomes ```>>>``` and the current directory is not displayed. In the Linux environment, using Terminal (the Linux equivalent to PowerShell, albiet more powerful), ```>``` becomes ```<CURRENT DIRECTORY>:-$``` (Note: ```<``` and ```>``` are used for the demo purpose, as discussed earlier). Understanding this is important when learning how to navigate directories by CLI. 
 
