@@ -324,7 +324,7 @@ For this demonstration, we will only be working with a generic ```<METHOD>``` (H
 
 To get started, open up Sublime. You should be starting with a blank page. To take advantage of Sublime's syntax highlighting, click the ```View``` tab and hold your mouse over the Syntax drop down menu. Click on "Batch", as shown in the image above. Once you've done this, press ```Enter``` until there are 12 lines in the document. ```ctrl+left click``` each line, or click and drag with the mouse wheel over each line. You should now have a cursor in all 12 lines. Type ```PowerShell.exe -ExecutionPolicy Bypass -Command```. This should populate all 12 lines with your input. If you have correctly set Sublime to Batch syntax, the program being called by ```cmd``` will be in blue text (PowerShell.exe), commands will be in orange text, and the argument to a command will be in green text. Your document should look like the image below. Also notice the "MiniMap" that the red arrow is pointing to; this can be used to navigate the document quickly and will be useful later when our BAT file gets quite long. 
 
-![BAT Syntax highlighting](images/making_BAT1_pt1.PNG)
+![BAT Syntax highlighting](images/making_BAT1_pt1.png)
 
 You probably noticed the ```-ExecutionPolicy Bypass``` command that we used. The "Execution Policy" describes a Windows security feature that limits (or doesn't limit, depending on it's setting) permissions related to running scripts, which can sometimes be restrictive. These can be changed relatively easily, but this could turn into a security problem if it not changed back. Instead, when we call ```PowerShell``` from ```cmd```, we can include this paramter to the ```PowerShell.exe``` command to spawn a PowerShell instance that bypasses the Execution Policy; the configuration will not persist beyone the session.
 
@@ -332,7 +332,7 @@ For some reason, I was unable to get the BAT file to create the new positive and
 
 Insert a cursor after "-Command" on the first 6 rows and type ``` "mkdir ``` (make sure to include the spaces before and after). Insert a cursor after "-Command" on rows 9-14 and type ``` "copy ``` (remember spaces). Place a cursor at the end of each line on lines 1-6 and lines 9-14; type ```E:\<YOUR_PROJECT>\<METHOD>\WIFF_DATA\```. This should populate most of the file for you. Fill in the remaining based on the picture below. Include ```PAUSE``` at the end as shown; this will prevent ```cmd``` from closing until you provide an input (such as hitting the space bar), which lets you know that the batch is done being processed. Save the file as ```E:\<YOUR_PROJECT\Settings\batch-sort_pos-neg.bat```; if you have added the settings folder to the Sublime project, you should see the file in the sidebar now (red arrow).
 
-![BAT sort positive and negative files](images/final_BAT1.PNG)
+![BAT sort positive and negative files](images/final_BAT1.png)
 
 If you can't see, here is the text:
 
