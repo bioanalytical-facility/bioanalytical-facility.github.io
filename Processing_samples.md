@@ -117,7 +117,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
 27. Click `Data processing > Identification` on the menu bar at the top of the window. Select the MoNa `*.msp` file for the associated mode. Change the RT tolerance to 100 min, the Identification score cut off to 80%, and make sure Use RT for scoring and Use RT for filtering are both unchecked. Continue using the same post-identification settings. Click `Finish`.
 28. With a couple of exceptions, repeat steps #2-#26 of this section using the new alignment file containing the MoNa matches. I recommend skipping step #16 with the "Suggested" features because there will be too many. Use the Compound Search tool to pick the best matches of the identified compounds.
 
-###Statistical analysis
+## Statistical analysis
 
 1.  With an MS-DIAL project file (that has already been curated and normalized) open for one of the modes, click `Option > File property setting`.
 2.  Make sure that only the biological samples are checked. Continue to step #3 without closing the window.
