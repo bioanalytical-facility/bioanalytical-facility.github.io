@@ -143,6 +143,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
 11. Return to the main project window once completed.
 12. A simple PCA can be performed by clicking `Data visualization > Principal component analysis`, but I personally do not see the point because the PCA graphic is the same as the one shown in PLS results.
 13. Once all four modes are processed and curated, pathway analysis can be done very easily within MS-DIAL by clicking `Data visualization > Pathway analysis`. Select the correct "Pathway selection", then click `Load` to load each of the project files for each mode. Then, use the drop-downs to select the desired alignment file to be used. **Make sure to group by "InChiKey" and not "Metabolite name".** Click `Mapping` once finished and the pathway map will load. Metabolite abundance is displayed by average-intensity bar graphs with error bars. **This is the best to combine the results of the different modes.**
-$$
-    \gamma
-$$
+
+    $$
+    \gamma 
+    $$
