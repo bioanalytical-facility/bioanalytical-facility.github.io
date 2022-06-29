@@ -1,8 +1,4 @@
-The data set is acquired by SWATH acquisition, a type of Data Independent Acquisition (DIA acquisition). The spectra acquired by DIA acquisition, as opposed to DDA acquisition (such as MRM or an IDA experiment), are very rich in information but require deconvolution. This is because the link between Precursor Ion (MS1) and Product Ion (MS2) is lost in DIA acquisition. This means that the MS2 scan of two co-eluting compounds within the same MS2 experiment (as in the same SWATH window) are identical.
-
 # Sample Processing in MS-DIAL GUI
-
-## Introduction
 
 Described here is a step-by-step for processing an HPLC-ESI-QTOF untargeted metabolomics data set acquired with the BAF's Sciex TripleTOF 6600 high-resolution mass spectrometer, coupled to an ExionLC HPLC system, using the MS-DIAL (v 4.90) GUI program . This data set has been acquired by SWATH acquisition, a type of Data Independent Acquisition (DIA acquisition), and the data set contains sample files from four separate runs (aka "modes"):
 
@@ -52,6 +48,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
 12. Navigate to the `Alignment` tab of the parameter window, and select the QC sample that is in the middle of the analytical order for the reference file. Make sure to also name the alignment, so that you can keep track of your results better.
 13. Once you are done with the parameters window, click `Next`.
 14. The RTcorrection window should open after a bit. Click `Browse Ref file` to select the RTcorr.txt file for retention-time correction using the technical internal standards.
+![Retention time correction window](images/RTcorrectionViewer.PNG)
 15. Click `RT correction` to begin detection of internal standards for assessing RT drift. This will take a couple of minutes.
 16. Once loading is complete, click the `Result table` tab to make sure the internal standards were detected in every sample (except the blank).
 17. If something wasn't detected in a sample, the associated cell in the table will be orange. Click `Auto fill` to fill the missing value with the average retention time. Make sure to do this for the blank. If necessary, determine why an IS was not detected in a sample. Sometimes you can fix the issue by navigating back to the `Reference compound information` tab and modifying the RT and m/z tolerances and repeating this step.
