@@ -11,9 +11,7 @@ All attempts will be made to follow the confidence reporting guidelines set fort
 
 In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.wiff` files are profile spectra, as opposed to centroided spectra. These files could have also been converted to another format, such as `*.mzML`. In particular, to use the MS-DIAL command-line tool, MsdialConsoleApp.exe, DIA files must be converted to `*.abf` format. There are advantages to this file format even if the GUI program is being used: `*.abf` is a binary file format, so these files process very quickly.
 
-## Steps
-
-#### Preparation
+## Preparation
 
 1.  Make a directory for your project on your computer or hard drive. Set up sub-directories for the four modes mentioned above (pRP, nRP, pHILIC, nHILIC).
 2.  Copy all `*.wiff` and `*.wiff.scan` files from the instrument PC to your project directory. Sort the `*.wiff` and `*.wiff.scan` files to the correct sub-directory.
@@ -32,7 +30,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
     -   Positive mode: Include [M+H]-, [M+Na]+, [M+K]+, [M+H-H2O]+, [M+H-2H2O]+, and [2M+H]+
     -   Negative mode: Include [M-H]-, [M-H+FA]-, and [2M-H]-
 
-#### Creating the MS-DIAL Project
+## Creating the MS-DIAL Project
 
 1.  Navigate to the sub-directory for one of the four modes, then click on the MSDIAL folder and open up `MSDIAL.exe`. For the sake of the demo, we are using negRP first.
 2.  Click `File > New Project`
@@ -55,7 +53,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
 18. Review the intensity plots and uncorrected/corrected EIC tabs. Click `Run` once everything is satisfactory, and samples will finish processing.
 19. Either at this point, or at a more convenient time later, perform steps #1-#18 for the other three modes.
 
-#### Data visualization and curation
+## Data visualization and curation
 
 1.  Once the project file has loaded, click through all of the sample files displayed in the `File Navigator` to make sure that all of the samples were processed correctly. This is especially important when using `*.abf` and `*.mzML` files. Looking at the `Peak spot viewer`, make sure the retention time and mass range is not cut short.
 
@@ -119,13 +117,12 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
 27. Click `Data processing > Identification` on the menu bar at the top of the window. Select the MoNa `*.msp` file for the associated mode. Change the RT tolerance to 100 min, the Identification score cut off to 80%, and make sure Use RT for scoring and Use RT for filtering are both unchecked. Continue using the same post-identification settings. Click `Finish`.
 28. With a couple of exceptions, repeat steps #2-#26 of this section using the new alignment file containing the MoNa matches. I recommend skipping step #16 with the "Suggested" features because there will be too many. Use the Compound Search tool to pick the best matches of the identified compounds.
 
-#### Statistical analysis
+###Statistical analysis
 
 1.  With an MS-DIAL project file (that has already been curated and normalized) open for one of the modes, click `Option > File property setting`.
 2.  Make sure that only the biological samples are checked. Continue to step #3 without closing the window.
 3.  For Partial Least Squares analysis, such as PLS-DA, OPLS-DA, PLS-R, OPLS-R, etc, the ` $\gamma$ variable` must be set appropriately:
     -   **(O)PLS-DA**: Set the samples in the "Wild-type" cohort to 0. Set all the samples in the treatment cohorts to 1.
-
     -   **(O)PLS-R**: Cohort samples should have the variable set to consecutive numbers. For example, set the "Wild-type" cohort to 0, set treatment #2 to 1, set treatment #3 to 2, and so on.
 4.  Click `Finish`
 5.  Click `Data visualization > Partial least squares`. A window will pop-up. Set the "PLS method" based on the settings you chose in step #3. Set the "Metabolite selection" to "Ref. matched". Set the "Transform method" to log10. Set the "Scale method" to auto scale. Click `Done`.
