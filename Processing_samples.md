@@ -74,7 +74,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
 
 7.  In the first entry of the table that appears, type the alginemnt ID of the IS into the `Target ID` column. Copy and paste this to every entry in the table. There are probably 10,000-20,000 rows, so it is easiest to copy the value, click into the 2nd row, scroll all the way to the bottom, shift+click into the last row, and paste using `Ctrl+V`. Click `Finish` when you are done.
 
-    ![Settings for the internal standard normalization](images\Normalization.PNG){width="762"}
+    ![Settings for the internal standard normalization](images/Normalization.PNG){width="762"}
 
 8.  Click `Data visualization > Normalization` in the menu bar at the top of the window.
 
@@ -99,7 +99,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
     -   Change to "Unsettled" if the spectral match is good and there is a low m/z difference, but based on RT info (or if there is a better identification) it can be excluded. This might indicate that the match is an isomer of the compound in the library within the same compound class.
     -   Additional library entries can be searched using the `Search` tool. RT and m/z tolerances can be adjusted.
 
-    ![Using the Compound Search tool](images%5CUsing-Compound-Search.PNG)
+    ![Using the Compound Search tool](images/Using-Compound-Search.PNG)
 
 17. Click `File > Save` to save the project after your curations.
 
@@ -113,7 +113,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
 
 22. Adjust the settings to reflect the image below. This will be the same for both modes and both columns.
 
-![Ion amalgamator settings](images%5Camalgamator-settings.PNG)
+![Ion amalgamator settings](images/amalgamator-settings.PNG)
 
 23. Press `Run`. If it doesn't work, MS-DIAL will crash and this likely means there is formatting issues with the peak list file that was uploaded. If it does work, it won't really look like much has happened, but some features will be annotated with the adduct they are correlated with in the other polarity.
 24. Save the project, then press `Export > Alignment result` and export the normalized results, and also the parameters. Saving these parameters will make it easy to report the settings used and it will also make setting the parameters of future projects easier.
