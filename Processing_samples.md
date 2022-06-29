@@ -135,7 +135,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
 6.  The "Multivariate analysis result window" opens. Click `Save plot properties` to save the results to a `*.txt` file. Refer to the bullets below for useful info about the result window:
     -   All of the "bars" shown represent a feature. Zoom in on these by right-click-dragging over them. The feature name will be displayed by holding the cursor over one of the bars.
 
-    -   Click `VIP` to see the VIP features. **NOTE: For (O)PLS-DA, these features are with respect to the samples with a $$\\(gamma\\)$$ variable of 0.** Change the `?? variable` of the different cohorts to see the results with respect to a different cohort.
+    -   Click `VIP` to see the VIP features. **NOTE: For (O)PLS-DA, these features are with respect to the samples with a \(\\gamma\) variable of 0.** Change the `?? variable` of the different cohorts to see the results with respect to a different cohort.
 7.  Make note of the top 10 VIP features. Return to the main project window once done with PLS analysis.
 8.  To generate a publication-quality heat map, click `Data visualization > Hierarchical clustering analysis`. Set the "Metabolite selection" to "Ref. matched". Set the "Transform method" to log10. Set the "Scale method" to auto scale. Click `Done`.
 9.  I prefer to set the number of metabolites shown to 100. This makes it hard to see, but this can be fixed by setting the metabolite label size to 8 (the lowest) and adjusting the size of the heat map by dragging the edges. I also prefer to display the label type to "Class name". Maximize the HCA result window if needed.
