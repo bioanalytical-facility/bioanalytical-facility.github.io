@@ -74,7 +74,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
 
 7.  In the first entry of the table that appears, type the alginemnt ID of the IS into the `Target ID` column. Copy and paste this to every entry in the table. There are probably 10,000-20,000 rows, so it is easiest to copy the value, click into the 2nd row, scroll all the way to the bottom, shift+click into the last row, and paste using `Ctrl+V`. Click `Finish` when you are done.
 
-    ![Settings for the internal standard normalization](images/Normalization.PNG){width="762"}
+    ![Settings for the internal standard normalization](images\Normalization.PNG){width="762"}
 
 8.  Click `Data visualization > Normalization` in the menu bar at the top of the window.
 
