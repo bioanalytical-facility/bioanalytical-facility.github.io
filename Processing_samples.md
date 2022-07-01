@@ -26,7 +26,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
     -   A `*.txt` file for MoNa-Library-Processing settings (example: `Parameter_nRP-MoNa.txt`)
     -   A `*.med2` file that can be loaded into MSDIAL for MoNa-Library-Processing settings (example: `Parameter_nRP-MoNa.med2`)
 8.  An Excel/`*.csv` file containing sample names (MUST BE THE SAME ACROSS ALL MODES; sample names does not mean `*.wiff` file names..), "Type" (sample, standard, QC, etc), Class ID (cohort name), Batch (usually 1 for all, unless not all ran together), Analytical order (sort `*.wiff` files by date to determine), Inject. Volume (uL), Included (TRUE or FALSE; usually true initially but we change to false later).
-9.  For each run, a post-identification tab-delimited `*.txt` file must be made and saved to each directory. This file should have these columns in the order given: `Metabolite`, `MZ`, `RT`, `Adduct`, `InChiKey,` and `SMILES`. Only include compounds that can be detected in a given mode (NOTE: detected is not the same as MS2 acquisition or a good signal...). See below for polarity-specific adducts to include.
+9.  For each run, a post-identification tab-delimited `*.txt` file must be made and saved to each directory. This file should have these columns in the order given: `Metabolite`, `MZ`, `RT`, `Adduct`, `InChiKey`, `Formula`, and `SMILES`. Only include compounds that can be detected in a given mode (NOTE: detected is not the same as MS2 acquisition or a good signal...). See below for polarity-specific adducts to include.
     -   Positive mode: Include [M+H]-, [M+Na]+, [M+K]+, [M+H-H2O]+, [M+H-2H2O]+, and [2M+H]+
     -   Negative mode: Include [M-H]-, [M-H+FA]-, and [2M-H]-
 
