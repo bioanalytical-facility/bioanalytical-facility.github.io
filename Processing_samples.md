@@ -104,7 +104,7 @@ In this tutorial, the samples are `*.wiff` files. The spectra in the native `*.w
 
 18. **For the amalgamation of positive and negative modes**, an alignment feature table must be exported for use with the project of opposite polarity and same column. This will not be the final feature export. Go ahead and click `Export > Alignment result`. Export the normalized results. It says that `*.msp` and `*.mgf` are the only formats, but a `*.txt` file is actually what is exported. Set the directory to export the "results" to and click export.
 
-19. Open up the exported table. Delete all the columns except for the Average RT and Average m/z. Move the m/z so that is the first column, and the RT is the second. Name the column headers `m/z` and `retention time`. Save the file as a tab-delimited `*.txt` file. If you saved to a different name, go ahead and delete the original file that was exported as these are not the final results.
+19. Open up the exported table in Excel. Delete all the columns except for the Average RT and Average m/z. Move the m/z so that is the first column, and the RT is the second. Name the column headers `m/z` and `retention time`. Save the file as a tab-delimited `*.txt` file. If you saved to a different name, go ahead and delete the original file that was exported as these are not the final results.
 
 20. Repeat all the steps for "**Creating the MS-DIAL Project"** and steps #1-#19 of "**Data visualization and curation**" to create a project for and curate the results of the opposite polarity and same column (for example, if you were processing data for negRP, process data for posRP).
 
