@@ -2,7 +2,7 @@
 youtubeId: PTYcl3Uhmi8
 ---
 
-{% include youtubePlayer.html id=page.youtubeId %}
+{% include youtubePlayer.html id=page.PTYcl3Uhmi8 %}
 
 # Creating an In-House Accurate-Mass/Retention-Time Spectral Library
 
