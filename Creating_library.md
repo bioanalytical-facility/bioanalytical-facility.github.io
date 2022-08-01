@@ -6,9 +6,6 @@ Generating an in-house library, however, takes a lot of work and time. Polarity 
 
 ## Planning and Organization
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PTYcl3Uhmi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 Library reference spectra are acquired by injecting vials containing 5 to 10 analytical standards suspended in solvent conditions that match experimental conditions. The standards selected to be in each vial should be optimized based on obtaining the maximum separation in m/z as possible. Ideally, every compound in the vial will fall within a different isolation window. When this is not the case, compounds falling within the same isolation window *must have different retention times*, otherwise the obtained library spectra will be contaminated with one another. A balance should be found between the separation in mass of each compounds and the total number of vials that will be used; the cost of consumables adds up. Use the width of each (or average) isolation window to help find this balance. 
 
 Determine the average isolation window width by dividing the MS1 scan range by the number of isolation windows. The current acquisition method the BAF is using at the time of has an MS1 scan with a mass range of 70 to 1100 Daltons (a range of 1,030 Da) and 36 isolation windows. The isolation windows, then, are roughly 29 Da wide. This is roughly the minimum separation in molecular weight each compound should be per vial. Hopefully this should allow for 10 per vial. At 10 compounds/vial, 400 compounds will use 40 vials for one method in both polarities.
@@ -137,6 +134,9 @@ To assess RT drift and analyte response curves, each vial is to be injected 4 ti
 Once you have acquired both polarities for one method, change the column, change the solvents/purge the binary pump system, prepare the next batch of standards, then continue with the sequence described in the table. 
 
 ## Data Pre-Processing
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PTYcl3Uhmi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 After both methods are done running, transfer the HILIC files to ```E:\<YOUR_PROJECT>\HILIC``` and transfer the Reverse-phase files to ```E:\<YOUR_PROJECT>\Reverse-phase``` on your external drive. Next, convert the ```*.wiff``` files to ```*.mzmL``` format using *msconvert* and save them to ```E:\<YOUR_PROJECT>\<METHOD>\MZML_DATA```. Then, convert the ```*.mzML``` files to ```*.abf``` format using the *Abf File Converter* program and save them to ```E:\<YOUR_PROJECT>\ABF_DATA_MS-DIAL```. Make sure to centroid MS1 **and** MS2 spectra when converting to ```*.mzML``` format. See the ***FILE CONVERSION*** section for more details. At this point, the structure of ```E:\<YOUR_PROJECT>``` should look similar to the image below:
 
