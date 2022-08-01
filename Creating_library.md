@@ -1,6 +1,9 @@
 ---
 youtubeId: PTYcl3Uhmi8
 ---
+
+{% include youtubePlayer.html id=page.youtubeId %}
+
 # Creating an In-House Accurate-Mass/Retention-Time Spectral Library
 
 Spectral matching is an important part of the compound identification process, yet remains one of the greatest challenges in LC-MS based metabolomics. There are HPLC-MSMS spectral databases available for use that are great resources, such as the [NIST 20 Tandem Mass Spectral Libraries](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:msms), the [RIKEN MS2 libraries](http://prime.psc.riken.jp/compms/msdial/main.html#MSP), the [MoNA MS2 libraries](https://mona.fiehnlab.ucdavis.edu/downloads), and the [GNPS MS2 library](https://gnps.ucsd.edu/ProteoSAFe/libraries.jsp), but using a in-house spectral library generated from authentic chemical standards acquired under conditions identical to experimental conditions is ideal. There are multiple reasons for this. The chromatography column, mobile phase compositions, and even the composition of the solvent samples are suspended in can significantly alter the retention time of eluting analytes; altering any of these parameters can result in a useless Accurate-Mass Retention-Time (AMRT) library. For the same compound, spectra that are acquired using different mobile phase additives, polarities, acquisition types (DDA vs DIA), collision energy (CE) and collision energy spread (CES), instrument types (QTOF, Orbitrap, etc.), and instrument manufacturers (Thermo, Agilent, Sciex, etc) can vary greatly. 
