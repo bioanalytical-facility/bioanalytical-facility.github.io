@@ -1,17 +1,10 @@
----
-youtubeId: PTYcl3Uhmi8
----
-
-Example:     youtubeId: lDi9uFcD7XI
-
-
-{% include youtubePlayer.html id=page.youtubeId %}
-
 # Creating an In-House Accurate-Mass/Retention-Time Spectral Library
 
 Spectral matching is an important part of the compound identification process, yet remains one of the greatest challenges in LC-MS based metabolomics. There are HPLC-MSMS spectral databases available for use that are great resources, such as the [NIST 20 Tandem Mass Spectral Libraries](https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:msms), the [RIKEN MS2 libraries](http://prime.psc.riken.jp/compms/msdial/main.html#MSP), the [MoNA MS2 libraries](https://mona.fiehnlab.ucdavis.edu/downloads), and the [GNPS MS2 library](https://gnps.ucsd.edu/ProteoSAFe/libraries.jsp), but using a in-house spectral library generated from authentic chemical standards acquired under conditions identical to experimental conditions is ideal. There are multiple reasons for this. The chromatography column, mobile phase compositions, and even the composition of the solvent samples are suspended in can significantly alter the retention time of eluting analytes; altering any of these parameters can result in a useless Accurate-Mass Retention-Time (AMRT) library. For the same compound, spectra that are acquired using different mobile phase additives, polarities, acquisition types (DDA vs DIA), collision energy (CE) and collision energy spread (CES), instrument types (QTOF, Orbitrap, etc.), and instrument manufacturers (Thermo, Agilent, Sciex, etc) can vary greatly. 
 
 Generating an in-house library, however, takes a lot of work and time. Polarity switching is not an option with high-resolution mass spectrometry, so a library must be made for positive and negative modes both. If your workflow implements orthogonal separations (such as HILIC and Reverse-Phase), this increases the number of libraries to four. It also takes planning; otherwise a lot of time can be wasted by having to start over. As you can see, it is wise to make sure everything goes right the first time. Unfortunately, there are not a lot of resources that describe, step by step, how to create a high-quality AMRT spectral library. The best protocol that I have found to date is the *Tutorial 1. Chemical standard characterization using LC-MS AIF data for AMRT MS2 library* document found in the [Supplementary Materials](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6918128/bin/metabolites-09-00251-s001.zip) section of [Creating a Reliable Mass Spectral–Retention Time Library for All Ion Fragmentation-Based Metabolomics](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6918128/). The methods presented here have been adapted from this publication. The sections below describe in detail how to create an in-house AMRT,  spectral library using SWATH acquisition on the BAF's TripleTOF 6600+ instrument. ***Note:** It is assumed that chromatography methods and an in-house compound database document/spreadsheet --complete with compound names, an in-house database key, in-house unique IDs, exact mass, adduct m/z's (exact mass), and chemical identifiers* ***( especially InChiKey and SMILES)**--* *has already been created and is ready for use. Read the* ***IN-HOUSE DATABASE SECTION** for more details.*
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PTYcl3Uhmi8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Planning and Organization
 
